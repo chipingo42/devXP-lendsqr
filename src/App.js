@@ -1,9 +1,9 @@
-import Navbar from "./components/home/Navbar";
+import Login from "./components/home/Login";
 
 function App() {
   return (
     <div className="">
-      <Navbar />
+      <Login />
     </div>
   );
 }

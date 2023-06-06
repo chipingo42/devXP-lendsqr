@@ -1,9 +1,9 @@
 import React from 'react'
 import pablo_img from '../../Assets/pablo-sign-in 1.svg'
 
-const Navbar = () => {
+const Login = () => {
 
-  const inputStyle = `block my-5 w-full py-3 border rounded-md border-primary px-2 placeholder:text-primary-50`
+  const inputStyle = `block my-5 w-full py-3 border rounded-md border-primary px-2 placeholder:text-primary-50`;
 
   return (
     <div className='md:flex justify-between max-w-[90%] mx-auto'>
@@ -24,7 +24,7 @@ const Navbar = () => {
         </div>
         <img src={pablo_img} alt="" className='mt-139' />
       </div>
-      <div className='basis-3/6 px-20'>
+      <div className='h-screen basis-3/6 px-20'>
         <h1 className='font-Avenir font-bold text-md mt-220 text-primary'>Welcome!</h1>
         <p className=' font-Avenir font-normal text-xs text-primary-50 mt-10'>Enter details to login.</p>
         <div>
@@ -45,5 +45,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar;
-// fdfdfd
+export default Login;
