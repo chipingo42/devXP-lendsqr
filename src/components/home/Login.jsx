@@ -1,5 +1,6 @@
 import React from 'react'
-import pablo_img from '../../Assets/pablo-sign-in 1.svg'
+import img from '../../Assets/pablo-sign-in 1.svg'
+import { Link } from 'react-router-dom';
 
 const Login = () => {
 
@@ -22,7 +23,7 @@ const Login = () => {
           </span>
           <h1 className='font-Avenir text-primary font-semibold text-sm'>lendsqr</h1>
         </div>
-        <img src={pablo_img} alt="" className='mt-139' />
+        <img src={img} alt="" className='mt-139' />
       </div>
       <div className='h-screen basis-3/6 px-20'>
         <h1 className='font-Avenir font-bold text-md mt-220 text-primary'>Welcome!</h1>
@@ -37,7 +38,9 @@ const Login = () => {
               <span className='absolute top-3 right-3 font-Avenir font-semibold text-secondary text-xxs '>show</span>
             </div>
             <span className=' font-Avenir font-semibold text-xxx text-secondary'>Forgot PASSWORD?</span>
-            <input type="submit" value="LOG IN" className={`${inputStyle} bg-secondary text-white hover:bg-primary transition duration-75`} />
+            <Link to="dashboard">
+              <input type="submit" value="LOG IN" className={`${inputStyle} bg-secondary text-white hover:bg-primary transition duration-75`} />
+            </Link>
           </form>
         </div>
       </div>

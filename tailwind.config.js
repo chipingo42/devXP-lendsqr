@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -17,7 +19,8 @@ module.exports = {
         "default": "#FFFFFF",
       },
       fontFamily: {
-        Avenir: 'Avenir Next LT Pro',
+        Avenir: ["'Avenir Next LT Pro', sans-serif"],
+        roboto: ["'Roboto', sans-serif"]
       },
       screens: {
         xs: "480px",
@@ -37,6 +40,7 @@ module.exports = {
       },
       borderColor: {
         "primary": "#545F7D26",
+        "primary-50": "#213F7D",
       },
     },
   },
